@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Lexend:wght@400;900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-brutal: "Lexend", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+/* Cherry Blossom Pattern for Ukiyo-e */
+.bg-sakura {
+  background-image: radial-gradient(#C82333 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Prose overrides for better theme integration */
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: inherit;
+}
+
+.prose p, .prose li, .prose blockquote {
+  color: inherit;
+}
