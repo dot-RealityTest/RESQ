@@ -1,67 +1,82 @@
 # RESQ
 
-RESQ is a local-first text rescue tool that turns messy notes, OCR output, and rough drafts into clean Markdown. It runs as a Vite + React app in the browser and as a packaged Electron desktop app on macOS.
+RESQ turns messy text into clean Markdown fast.
+
+It is built for the moments when you have something useful trapped inside ugly input: OCR output, copied docs, rough meeting notes, half-structured research, or raw drafts that should be readable already.
+
+## Download
+
+[Download the latest macOS `.dmg`](https://github.com/dot-RealityTest/RESQ/releases/latest/download/RESQ-0.0.0-arm64.dmg)
+
+Prefer browsing the release page first?
+
+[Open the latest release](https://github.com/dot-RealityTest/RESQ/releases/latest)
 
 ## Why RESQ
 
-- Convert unstructured text into readable Markdown quickly
-- Keep the main cleanup flow local and deterministic
-- Preview the result before exporting
-- Export clean `.md`, `.html`, and `.pdf` files
-- Optionally use a local Ollama model for an AI polish pass
+Most text cleanup tools make you do the boring part by hand.
 
-## Core Features
+RESQ is designed to rescue structure automatically so you can move from chaos to something usable in one pass. Paste in rough text, let RESQ recover headings, tasks, quotes, metadata, and command blocks, then export the result as clean Markdown, HTML, or PDF.
 
-- Rules-based Markdown parser for headers, emphasis, quotes, lists, links, images, code, and spacing
-- Heuristic structure rescue for titles, sections, metadata tables, task lists, command blocks, quotes, and timelines
-- Local-first conversion flow with no cloud dependency required
-- Optional Ollama enhancement in a dedicated popup window
-- Desktop app shell for a focused writing and cleanup workflow
-- Multiple visual themes for editing and preview
+The goal is simple: spend less time fixing formatting and more time using the content.
 
-For a fuller feature breakdown, see [docs/FEATURES.md](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/docs/FEATURES.md).
+## What It Helps With
 
-## Quick Start
+- OCR output that lost its shape
+- Meeting notes that need to become shareable
+- Technical notes that should be readable Markdown
+- Rough drafts that need structure before polishing
+- Copied text from tools that export badly
 
-1. Install dependencies:
-   `npm install`
-2. Start the web app:
-   `npm run dev`
-3. Open [http://localhost:3000](http://localhost:3000)
+## What You Get
 
-## Desktop App
+- Local-first cleanup with no cloud dependency required for the main workflow
+- Smart structure rescue for titles, sections, task lists, tables, quotes, and commands
+- Live preview before you export
+- Export to Markdown, HTML, or PDF
+- Optional Ollama enhancement when you want a final local polish pass
+- A focused macOS desktop app experience
 
-1. Start the Electron app in development:
-   `npm run desktop:dev`
-2. Build a local packaged app:
-   `npm run desktop:build`
-3. Build distributables:
-   `npm run desktop:dist`
+## How It Feels
 
-Packaged desktop builds are written to `release/`.
+1. Paste in messy text.
+2. Click `Convert`.
+3. Watch RESQ turn it into readable Markdown.
+4. Copy it, export it, or send it through one more cleanup pass.
 
-## Validation
+It is fast, local, and built to make ugly text usable again.
 
-- Run tests:
-  `npm test`
-- Run typecheck:
-  `npm run lint`
-- Run production build:
-  `npm run build`
+## Optional AI Polish
 
-## Project Structure
+RESQ works on its own.
 
-- [src/App.tsx](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/src/App.tsx): main UI
-- [src/lib/markdownParser.ts](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/src/lib/markdownParser.ts): explicit Markdown parser
-- [src/lib/markdownRescue.ts](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/src/lib/markdownRescue.ts): structure rescue heuristics
-- [src/lib/ollama.ts](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/src/lib/ollama.ts): Ollama integration
-- [electron/main.mjs](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/electron/main.mjs): desktop shell
-- [docs/HOW_TO.md](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/docs/HOW_TO.md): usage guide
-- [docs/FEATURES.md](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/docs/FEATURES.md): feature list
-- [docs/MARKETING_COPY.md](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/docs/MARKETING_COPY.md): landing page and App Store copy
+If you already run Ollama locally, you can use it for a softer cleanup pass after the structure is rescued. That keeps the core workflow deterministic, while still giving you an easy way to refine wording when you want it.
 
-## Notes
+## For Developers
 
-- No API keys are required for the core parser and rescue flow
-- Ollama is optional and only used when you choose AI enhancement
-- The app icon source is [Image 2.png](/Users/kika_hub/_KIKA_MAIN/Projects/03_pre-ready/RESQ/Image%202.png)
+If you want to run or modify RESQ locally:
+
+```bash
+npm install
+npm run dev
+```
+
+Desktop development:
+
+```bash
+npm run desktop:dev
+```
+
+Validation:
+
+```bash
+npm test
+npm run lint
+npm run build
+```
+
+More detail:
+
+- [Feature list](docs/FEATURES.md)
+- [How-to guide](docs/HOW_TO.md)
+- [Marketing copy](docs/MARKETING_COPY.md)
