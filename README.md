@@ -1,64 +1,66 @@
 # RESQ
 
-RESQ turns messy text into clean Markdown fast.
+Rescue messy text into clean Markdown.
 
-It is built for the moments when you have something useful trapped inside ugly input: OCR output, copied docs, rough meeting notes, half-structured research, or raw drafts that should be readable already.
+RESQ is for the moment when your notes, OCR output, copied docs, or rough draft clearly contain something valuable, but the formatting is too broken to use. Instead of manually rebuilding structure line by line, RESQ turns the mess into readable Markdown in one fast, local-first flow.
 
-## Download
+## Get RESQ
 
 [Download the latest macOS `.dmg`](https://github.com/dot-RealityTest/RESQ/releases/latest/download/RESQ-0.0.0-arm64.dmg)
 
-Prefer browsing the release page first?
-
 [Open the latest release](https://github.com/dot-RealityTest/RESQ/releases/latest)
 
-Website:
+[Visit the website](https://akakika.com/resq/)
 
-[akakika.com/resq](https://akakika.com/resq/)
+## Why People Want It
 
-## Why RESQ
+Messy text slows everything down.
 
-Most text cleanup tools make you do the boring part by hand.
+You paste in OCR output and spend twenty minutes fixing headings. You copy notes from another tool and lose the structure. You have useful content, but it is trapped inside formatting chaos.
 
-RESQ is designed to rescue structure automatically so you can move from chaos to something usable in one pass. Paste in rough text, let RESQ recover headings, tasks, quotes, metadata, and command blocks, then export the result as clean Markdown, HTML, or PDF.
+RESQ fixes that. Paste in rough text, click convert, and get a cleaner Markdown draft with sections, tasks, quotes, metadata, and code blocks recovered automatically.
 
-The goal is simple: spend less time fixing formatting and more time using the content.
+## What RESQ Does
 
-## What It Helps With
+- Turns rough notes into readable Markdown fast
+- Recovers structure from OCR scraps and copy-pasted text
+- Lets you preview the result before exporting
+- Exports to Markdown, HTML, or PDF
+- Keeps the core workflow local and fast
+- Adds optional Ollama polish when you want a final refinement pass
 
-- OCR output that lost its shape
-- Meeting notes that need to become shareable
-- Technical notes that should be readable Markdown
-- Rough drafts that need structure before polishing
-- Copied text from tools that export badly
+## Perfect For
 
-## What You Get
+- OCR output that needs to become usable
+- Meeting notes that should be shareable in minutes
+- Research dumps that need structure
+- Technical notes with commands, snippets, and lists
+- Raw text exports that are too ugly to work with directly
 
-- Local-first cleanup with no cloud dependency required for the main workflow
-- Smart structure rescue for titles, sections, task lists, tables, quotes, and commands
-- Live preview before you export
-- Export to Markdown, HTML, or PDF
-- Optional Ollama enhancement when you want a final local polish pass
-- A focused macOS desktop app experience
+## The Experience
 
-## How It Feels
-
-1. Paste in messy text.
+1. Paste your messy text.
 2. Click `Convert`.
-3. Watch RESQ turn it into readable Markdown.
-4. Copy it, export it, or send it through one more cleanup pass.
+3. Review the rescued Markdown.
+4. Copy it, export it, or polish it further.
 
-It is fast, local, and built to make ugly text usable again.
+That is the whole point of RESQ: less cleanup, more usable output.
+
+## Why It Feels Different
+
+RESQ is not trying to be a giant writing suite.
+
+It is focused on one job: taking text that is frustrating to work with and making it useful again. The local-first approach keeps it fast and private, and the structure rescue layer does the tedious work most people normally do by hand.
 
 ## Optional AI Polish
 
-RESQ works on its own.
+RESQ works great on its own.
 
-If you already run Ollama locally, you can use it for a softer cleanup pass after the structure is rescued. That keeps the core workflow deterministic, while still giving you an easy way to refine wording when you want it.
+If you already use Ollama locally, you can send the rescued draft through one more polish pass for softer phrasing and cleaner flow without turning the core app into an AI-dependent workflow.
 
 ## For Developers
 
-If you want to run or modify RESQ locally:
+Run locally:
 
 ```bash
 npm install
