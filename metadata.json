@@ -1,5 +1,5 @@
 {
-  "name": "Markdown Rescue",
-  "description": "A multi-themed markdown editor and previewer with a focus on visual personality.",
+  "name": "RESQ",
+  "description": "A local-first app for turning rough text into structured Markdown, with preview and export tools.",
   "requestFramePermissions": []
 }
