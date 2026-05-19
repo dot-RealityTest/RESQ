@@ -5,7 +5,7 @@
 [![Download](https://img.shields.io/badge/Download-macOS%20.dmg-0c8ce9?style=for-the-badge&logo=apple)](https://github.com/dot-RealityTest/RESQ/releases/latest/download/RESQ-0.0.0-arm64.dmg)
 [![Releases](https://img.shields.io/github/v/release/dot-RealityTest/RESQ?style=for-the-badge&logo=github)](https://github.com/dot-RealityTest/RESQ/releases/latest)
 [![Website](https://img.shields.io/badge/Website-akakika.com/resq-38bdf8?style=for-the-badge&logo=vercel)](https://akakika.com/resq/)
-[![License](https://img.shields.io/badge/License-Private-blue?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
 
@@ -286,7 +286,7 @@ A: Your text never leaves your device unless you explicitly choose to use the op
 
 ## 📄 License
 
-**Private** — All rights reserved to KIKA.
+MIT — open source. See [LICENSE](LICENSE).
 
 ---
 
